@@ -39,6 +39,9 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>AluraQuiz - Dreamcatcher</title>
+        <meta name="keywords" content="JavaScript, React, Next.js, aluraquiz, imersao-react" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:image" content="blob:https://vercel.com/6dc17e86-1ce5-45d9-8a7d-456481f035d8" />
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -79,7 +82,7 @@ export default function Home() {
             <h1>Dreamcatcher</h1>
             <p>é um girlgroup sul coreano, que teve sua estreia em 2017. Possui influências do rock em suas músicas.</p>
             <p>Confira o último lançamento do grupo:</p>
-            <iframe width="" height="" src="https://www.youtube.com/embed/1QD0FeZyDtQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <iframe width="280px" height="" src="https://www.youtube.com/embed/1QD0FeZyDtQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           </Widget.Content>
         </Widget>
         <Footer />

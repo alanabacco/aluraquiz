@@ -45,13 +45,3 @@ export default function GitHubCorner({ projectUrl }) {
     </Wrapper>
   );
 }
-
-// CORES
-// "#022340",
-
-// "primary": "#735A8C",
-// "secondary": "#3C6AA6",
-// "mainBg": "#101820",
-// "contrastText": "#FFFFFF",
-// "wrong": "#730237",
-// "success": "#F20789"
