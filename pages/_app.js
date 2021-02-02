@@ -25,6 +25,10 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
+  // iframe - vídeo
+  iframe {
+    padding-bottom: 15px;
+  }
 `;
 
 const { theme } = db;

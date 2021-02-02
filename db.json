@@ -65,7 +65,7 @@
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-base.alura-challenges.vercel.app/"
     ],
     "theme": {
       "colors": {
@@ -73,8 +73,8 @@
         "secondary": "#F2C763",
         "mainBg": "#101820",
         "contrastText": "#FEFEFE",
-        "wrong": "#D65658",
-        "success": "#42586E"
+        "wrong": "#D64043",
+        "success": "508A30"
       },
       "borderRadius": "4px"
     }
