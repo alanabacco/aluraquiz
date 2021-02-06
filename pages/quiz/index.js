@@ -13,6 +13,7 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         Resultado:
       </Widget.Header>
 
@@ -43,8 +44,10 @@ function ResultWidget({ results }) {
               {result === true ? 'Acertou' : 'Errou'}
             </li>
           ))}
-
         </ul>
+        <Button type="button" onClick={() => window.location.href = '/'}>
+          Jogar Novamente
+        </Button>
       </Widget.Content>
     </Widget>
   );
@@ -58,7 +61,8 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading...]
+        Espere um momento...
+        {/* Desafio do loading */}
       </Widget.Content>
     </Widget>
   );

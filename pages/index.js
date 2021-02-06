@@ -93,6 +93,7 @@ export default function Home() {
                 {`Jogar ${name}`}
               </Button>
             </form>
+
           </Widget.Content>
         </Widget>
         <Widget
@@ -142,7 +143,7 @@ export default function Home() {
           animate="show"
         />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/alanabacco" />
+      <GitHubCorner projectUrl="https://github.com/alanabacco/aluraquiz" />
     </QuizBackground>
   );
 }

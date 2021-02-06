@@ -39,6 +39,14 @@ export default function Footer(props) {
         <a href="https://www.alura.com.br/">
           <span>Imersão React da Alura</span>
         </a>
+        {' | '}
+        <a href="https://www.linkedin.com/in/alana-bacco/">
+          <span>Linkedin</span>
+        </a>
+        {' '}
+        <a href="https://www.instagram.com/alanabacco">
+          <span>Instagram</span>
+        </a>
       </p>
     </FooterWrapper>
   );
