@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import QuizBackground from '../../components/QuizBackground';
 import Widget from '../../components/Widget';
 import QuizContainer from '../../components/QuizContainer';
@@ -170,6 +171,18 @@ export default function QuizPage(externalQuestions, externalBg) {
     </QuizBackground>
   );
 }
+
+ResultWidget.propTypes = {
+  results: PropTypes.string,
+};
+
+QuestionWidget.propTypes = {
+  question: PropTypes.number,
+  totalQuestions: PropTypes.number,
+  questionIndex: PropTypes.number,
+  onSubmit: PropTypes.func,
+  addResult: PropTypes.func,
+};
 
 // CICLO DE VIDA COMPONENTES
 // [React chama de: Efeitos || Effects]

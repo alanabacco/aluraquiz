@@ -4,9 +4,9 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'plugin:react/recommended',
     'eslint:recommended',
-    'airbnb',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
     'plugin:@next/next/recommended',
   ],
   parserOptions: {
@@ -16,12 +16,13 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['react', 'jsx-a11y'],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     quotes: ['warn', 'single'],
     semi: ['warn', 'always'],
     'no-unused-vars': ['warn', { vars: 'all' }],
     'react/react-in-jsx-scope': 'off',
+    'react/prop-types': ['warn'],
   },
 };

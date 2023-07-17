@@ -66,21 +66,18 @@ export default function Home() {
               <iframe
                 width="280px"
                 height=""
-                src="https://www.youtube.com/embed/1QD0FeZyDtQ"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                title="YouTube video player"
+                src="https://www.youtube.com/embed/RPNaYj6etb8"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             </div>
 
             <form
-              onSubmit={function (infosEvento) {
+              onSubmit={(infosEvento) => {
                 infosEvento.preventDefault();
-
                 router.push(`/quiz?name=${name}`);
-
-                console.log('Fazendo uma submissao por meio do react.');
-
+                // console.log('Fazendo uma submissao por meio do react.');
                 // router manda para a próx página
               }}
             >

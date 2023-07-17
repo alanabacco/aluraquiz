@@ -1,5 +1,6 @@
-import db from '../../db.json';
 import React from 'react';
+import db from '../../db.json';
+import PropTypes from 'prop-types';
 import QuizBackground from '../../src/components/QuizBackground';
 import Widget from '../../src/components/Widget';
 import QuizContainer from '../../src/components/QuizContainer';
@@ -181,3 +182,15 @@ export default function QuizPage() {
     </QuizBackground>
   );
 }
+
+ResultWidget.propTypes = {
+  results: PropTypes.string,
+};
+
+QuestionWidget.propTypes = {
+  question: PropTypes.number,
+  totalQuestions: PropTypes.number,
+  questionIndex: PropTypes.number,
+  onSubmit: PropTypes.func,
+  addResult: PropTypes.func,
+};

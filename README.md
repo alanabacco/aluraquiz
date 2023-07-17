@@ -25,7 +25,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🚧 TODO
 
-- [ ] Atualizar dependencias
+- [X] Atualizar dependencias
+- [ ] Atualizar tag Image
 
 ---
 

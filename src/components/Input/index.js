@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const InputBase = styled.input`
   width: 100%;
@@ -19,3 +20,14 @@ export default function Input({ onChange, placeholder, ...props }) {
     </div>
   );
 }
+
+Input.defaultProps = {
+  value: '',
+};
+
+Input.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string,
+};
