@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import React from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';

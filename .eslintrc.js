@@ -22,5 +22,6 @@ module.exports = {
     quotes: ['warn', 'single'],
     semi: ['warn', 'always'],
     'no-unused-vars': ['warn', { vars: 'all' }],
+    'react/react-in-jsx-scope': 'off',
   },
 };

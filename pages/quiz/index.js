@@ -1,4 +1,5 @@
 import db from '../../db.json';
+import React from 'react';
 import QuizBackground from '../../src/components/QuizBackground';
 import Widget from '../../src/components/Widget';
 import QuizContainer from '../../src/components/QuizContainer';
