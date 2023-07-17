@@ -1,6 +1,4 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
-// import db from '../../../db.json';
 import QuizBackground from '../../components/QuizBackground';
 import Widget from '../../components/Widget';
 import QuizContainer from '../../components/QuizContainer';
@@ -12,38 +10,18 @@ import BackLinkArrow from '../../components/BackLinkArrow';
 function ResultWidget({ results }) {
   return (
     <Widget>
-      <Widget.Header>
-        Resultado:
-      </Widget.Header>
+      <Widget.Header>Resultado:</Widget.Header>
 
       <Widget.Content>
-        <p>
-          Você acertou
-          {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            if (resultAtual === true) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-
-          {/* Solução do Paulo */}
-          {results.filter((x) => x).length}
-          {' '}
-          questões.
-        </p>
+        <p>Você acertou {results.filter((x) => x).length} questões.</p>
         <ul>
-
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              Questão
-              {' '}
-              {index + 1}
+              Questão {index + 1}
               {': '}
               {result === true ? 'Acertou' : 'Errou'}
             </li>
           ))}
-
         </ul>
       </Widget.Content>
     </Widget>
@@ -53,20 +31,14 @@ function ResultWidget({ results }) {
 function LoadingWidget() {
   return (
     <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
+      <Widget.Header>Carregando...</Widget.Header>
 
-      <Widget.Content>
-        [Desafio do Loading...]
-      </Widget.Content>
+      <Widget.Content>[Desafio do Loading...]</Widget.Content>
     </Widget>
   );
 }
 
-function QuestionWidget({
-  question, totalQuestions, questionIndex, onSubmit, addResult,
-}) {
+function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, addResult }) {
   const [selectedAlternative, setSelectedAlternative] = React.useState(undefined);
   const [isQuestionSubmited, setIsQuestionSubmited] = React.useState(false);
   const questionId = `question__${questionIndex}`;
@@ -77,9 +49,7 @@ function QuestionWidget({
     <Widget>
       <Widget.Header>
         <BackLinkArrow href="/" />
-        <h3>
-          {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
-        </h3>
+        <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
 
       <img
@@ -93,14 +63,9 @@ function QuestionWidget({
       />
 
       <Widget.Content>
-        <h2>
-          {question.title}
-        </h2>
-        <p>
-          {question.description}
-        </p>
+        <h2>{question.title}</h2>
+        <p>{question.description}</p>
 
-        { /* ====== FORM ========================== */ }
         <AlternativesForm
           onSubmit={(infosdoEvento) => {
             infosdoEvento.preventDefault();
@@ -118,7 +83,13 @@ function QuestionWidget({
             const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
             const isSelected = selectedAlternative === alternativeIndex;
             return (
-              <Widget.Topic as="label" key={alternativeId} htmlFor={alternativeId} data-selected={isSelected} data-status={isQuestionSubmited && alternativeStatus}>
+              <Widget.Topic
+                as="label"
+                key={alternativeId}
+                htmlFor={alternativeId}
+                data-selected={isSelected}
+                data-status={isQuestionSubmited && alternativeStatus}
+              >
                 <input
                   style={{ display: 'none' }}
                   id={alternativeId}
@@ -135,16 +106,9 @@ function QuestionWidget({
             Confirmar
           </Button>
 
-          {/* <p>
-            Alternativa Selecionada:
-            {` ${selectedAlternative}`}
-          </p> */}
-
           {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
           {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
-
         </AlternativesForm>
-
       </Widget.Content>
     </Widget>
   );
@@ -175,12 +139,6 @@ export default function QuizPage(externalQuestions, externalBg) {
     }, 1 * 1500);
   }, []);
 
-  // CICLO DE VIDA COMPONENTES
-  // [React chama de: Efeitos || Effects]
-  // nasce === didMount
-  // atualizado === willUpdate
-  // morre === willUnmount
-
   function handleSubmitQuiz() {
     const nextQuestion = questionIndex + 1;
     if (nextQuestion < totalQuestions) {
@@ -208,10 +166,13 @@ export default function QuizPage(externalQuestions, externalBg) {
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
-
       </QuizContainer>
     </QuizBackground>
   );
 }
 
-// props
+// CICLO DE VIDA COMPONENTES
+// [React chama de: Efeitos || Effects]
+// nasce === didMount
+// atualizado === willUpdate
+// morre === willUnmount

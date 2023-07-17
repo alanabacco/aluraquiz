@@ -5,19 +5,22 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
+    'eslint:recommended',
     'airbnb',
+    'plugin:@next/next/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    quotes: ['warn', 'single'],
+    semi: ['warn', 'always'],
+    'no-unused-vars': ['warn', { vars: 'all' }],
   },
 };

@@ -1,13 +1,15 @@
-<h1 align="center">
-     AluraQuiz - criado durante a 
+<!-- <h1 align="center">
+     AluraQuiz - criado durante a
      <a href="https://site.alura.com.br/imersao-react-next-js/" alt="Site da Imersão React Nextjs da Alura">
         imersão React Next.js da Alura
      </a>
-</h1>
+</h1> -->
+
+# AluraQuiz - criado durante a [imersão React Next.js da Alura](https://site.alura.com.br/imersao-react-next-js/)
 
 ## 💻 Sobre o projeto
 
-O projeto AluraQuiz foi desenvolvido durante a Imersão React da Alura, que contou com 5 aulas práticas para criar e colocar no ar uma aplicação React com Next.js.
+O projeto AluraQuiz foi desenvolvido durante a Imersão React Next.js da Alura, em Janeiro de 2021, que contou com 5 aulas práticas para criar e colocar no ar uma aplicação React com Next.js.
 
 [Acessar o Quiz](https://aluraquiz.alanabacco.vercel.app/)
 
@@ -17,9 +19,13 @@ O projeto AluraQuiz foi desenvolvido durante a Imersão React da Alura, que cont
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
--   [React](https://pt-br.reactjs.org/)
--   [Next.js](https://nextjs.org/)
--   [Styled Components](https://styled-components.com/)
+- [React](https://pt-br.reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Styled Components](https://styled-components.com/)
+
+## 🚧 TODO
+
+- [ ] Atualizar dependencias
 
 ---
 
