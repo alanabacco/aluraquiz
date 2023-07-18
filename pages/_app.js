@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
   }
   iframe {
     padding-bottom: 15px;
+    border: none;
   }
 `;
 

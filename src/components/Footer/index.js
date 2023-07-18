@@ -12,14 +12,11 @@ const FooterWrapper = styled.footer`
   }
   a {
     color: white;
-    text-decoration: none;
     transition: 0.3s;
+    text-decoration: underline;
     &:hover,
     &:focus {
       opacity: 0.5;
-    }
-    span {
-      text-decoration: underline;
     }
   }
 `;
@@ -34,17 +31,10 @@ export default function Footer(props) {
         />
       </a>
       <p>
-        Projeto criado durante a{' '}
-        <a href="https://www.alura.com.br/">
-          <span>Imersão React da Alura</span>
-        </a>
+        Projeto criado durante a Imersão React da <a href="https://www.alura.com.br/">Alura</a>
         {' | '}
-        <a href="https://www.linkedin.com/in/alana-bacco/">
-          <span>Linkedin</span>
-        </a>{' '}
-        <a href="https://www.instagram.com/alanabacco">
-          <span>Instagram</span>
-        </a>
+        <a href="https://www.linkedin.com/in/alana-bacco/">Linkedin</a>{' '}
+        <a href="https://github.com/alanabacco">Github</a>
       </p>
     </FooterWrapper>
   );
