@@ -37,6 +37,8 @@ Abra o navegador em 'https://localhost:3000'.
 - [ ] Atualizar tags Image
 - [ ] Atualizar tag importação de fonte no Header
 - [ ] Criar outros quizes
+- [ ] Criar favicon
+- [ ] Criar pag 404
 
 ---
 
