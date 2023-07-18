@@ -161,7 +161,7 @@ export default function QuizPage() {
   }
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundimage={db.bg}>
       <QuizContainer>
         <QuizLogo />
 

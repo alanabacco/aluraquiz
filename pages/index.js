@@ -30,7 +30,7 @@ export default function Home() {
   const [name, setName] = React.useState('');
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundimage={db.bg}>
       <Head>
         <title>AluraQuiz - Dreamcatcher</title>
         <meta name="keywords" content="JavaScript, React, Next.js, aluraquiz, imersao-react" />
