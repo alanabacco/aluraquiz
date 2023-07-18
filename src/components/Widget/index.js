@@ -4,11 +4,13 @@ const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => theme.colors.mainBg}; //#1C1814
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
@@ -21,7 +23,7 @@ const Widget = styled.div`
   }
 `;
 
-Widget.Header = styled.header` 
+Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -51,17 +53,17 @@ Widget.Topic = styled.a`
   outline: 0;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.contrastText};
-  background-color:${({ theme }) => `${theme.colors.primary}90`};
+  background-color: ${({ theme }) => `${theme.colors.primary}90`};
   padding: 10px 15px;
   margin-bottom: 8px;
   cursor: pointer;
   border-radius: ${({ theme }) => theme.borderRadius};
-  transition: .3s;
+  transition: 0.3s;
   display: block;
 
   &:hover,
   &:focus {
-    opacity: .5,
+    opacity: 0.5;
   }
 `;
 

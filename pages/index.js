@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import styled from 'styled-components';
+import React from 'react';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
@@ -13,13 +13,6 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
-
-// const BackgroundImage = styled.div`
-//  background-image: url(${db.bg});
-//  flex: 1;
-//  background-size: cover;
-//  background-position: center;
-// `;
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -35,15 +28,17 @@ const QuizContainer = styled.div`
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
-  // console.log('retorno do useState', name, setName);
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundimage={db.bg}>
       <Head>
         <title>AluraQuiz - Dreamcatcher</title>
         <meta name="keywords" content="JavaScript, React, Next.js, aluraquiz, imersao-react" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta property="og:image" content="blob:https://vercel.com/6dc17e86-1ce5-45d9-8a7d-456481f035d8" />
+        <meta
+          property="og:image"
+          content="blob:https://vercel.com/6dc17e86-1ce5-45d9-8a7d-456481f035d8"
+        />
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -63,28 +58,33 @@ export default function Home() {
           <Widget.Content>
             <div>
               <h1>Dreamcatcher</h1>
-              <p>é um girlgroup sul coreano, que teve sua estreia em 2017. Possui influências do rock em suas músicas.</p>
+              <p>
+                é um girlgroup sul coreano, que teve sua estreia em 2017. Possui influências do rock
+                em suas músicas.
+              </p>
               <p>Confira o último lançamento do grupo:</p>
-              <iframe width="280px" height="" src="https://www.youtube.com/embed/1QD0FeZyDtQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe
+                width="280px"
+                height=""
+                title="YouTube video player"
+                src="https://www.youtube.com/embed/RPNaYj6etb8"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
 
-            <form onSubmit={function (infosEvento) {
-              infosEvento.preventDefault();
-
-              router.push(`/quiz?name=${name}`);
-
-              console.log('Fazendo uma submissao por meio do react.');
-
-              // router manda para a próx página
-            }}
+            <form
+              onSubmit={(infosEvento) => {
+                infosEvento.preventDefault();
+                router.push(`/quiz?name=${name}`);
+                // console.log('Fazendo uma submissao por meio do react.');
+                // router manda para a próx página
+              }}
             >
               <Input
                 name="nomeDoUsuário"
                 onChange={(infosEvento) => {
                   setName(infosEvento.target.value);
-                  // console.log(infosEvento.target.value);
-                  // State
-                  // name = infosEvento.target.value;
                 }}
                 placeholder="Qual seu nome?"
                 value={name}
@@ -93,7 +93,6 @@ export default function Home() {
                 {`Jogar ${name}`}
               </Button>
             </form>
-
           </Widget.Content>
         </Widget>
         <Widget
@@ -119,17 +118,13 @@ export default function Home() {
 
                 return (
                   <li key={linkExterno}>
-                    <Widget.Topic
-                      as={Link}
-                      href={`/quiz/${projectName}___${githubUser}`}
-                    >
+                    <Widget.Topic as={Link} href={`/quiz/${projectName}___${githubUser}`}>
                       {`${githubUser} / ${projectName}`}
                     </Widget.Topic>
                   </li>
                 );
               })}
             </ul>
-
           </Widget.Content>
         </Widget>
         <Footer
@@ -147,8 +142,3 @@ export default function Home() {
     </QuizBackground>
   );
 }
-
-{ /* <h1>Dreamcatcher</h1>
-<p>é um girlgroup sul coreano, que teve sua estreia em 2017. Possui influências do rock em suas músicas.</p>
-<p>Confira o último lançamento do grupo:</p>
-<iframe width="280px" height="" src="https://www.youtube.com/embed/1QD0FeZyDtQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /> */ }

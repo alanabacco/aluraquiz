@@ -1,29 +1,25 @@
 {
-  "name": "with-styled-components",
-  "version": "1.0.0",
+  "name": "aluraquiz",
+  "version": "1.1.0",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
+  "license": "MIT",
   "dependencies": {
-    "framer-motion": "^3.2.2-rc.1",
-    "next": "latest",
-    "prop-types": "^15.7.2",
-    "proptypes": "^1.1.0",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "react-is": "^16.8.0",
-    "styled-components": "^5.0.0"
+    "framer-motion": "^10.12.22",
+    "next": "^12.3.4",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.4"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0",
-    "eslint": "^7.18.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
-  },
-  "license": "MIT"
+    "@next/eslint-plugin-next": "^13.4.10",
+    "eslint": "^8.45.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2"
+  }
 }

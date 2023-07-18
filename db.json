@@ -1,81 +1,59 @@
 {
-    "bg": "https://pbs.twimg.com/media/ErwsTVZVkAAlTzk?format=jpg&name=large",
-    "title": "Quiz Dreamcatcher - Imersão React Nextjs Alura",
-    "description": "Teste os seus conhecimentos sobre o grupo",
-    "questions": [
-      {
-        "image": "https://pbs.twimg.com/profile_banners/729935154290925570/1610439265/1500x500",
-        "title": "Quantas integrantes tem no grupo?",
-        "description": "",
-        "answer": 1,
-        "alternatives": [
-          "8 integrantes",
-          "7 integrantes",
-          "9 integrantes",
-          "6 integrantes"
-        ]
-      },
-      {
-        "image": "https://pbs.twimg.com/media/C0xZQ3vVIAAmNpo?format=jpg&name=large",
-        "title": "Qual a data de estreia do grupo?",
-        "description": "Foi em uma sexta-feira.. ",
-        "answer": 3,
-        "alternatives": [
-           "15 de Janeiro de 2017",
-           "13 de Fevereiro de 2017",
-           "16 de Março de 2017",
-           "13 de Janeiro de 2017"
-        ]
-      },
-      {
-        "image": "https://pbs.twimg.com/media/ErmY1CxVEAElijp?format=jpg&name=large",
-        "title": "Qual o nome da integrante mais nova (maknae) do grupo?",
-        "description": "",
-        "answer": 0,
-        "alternatives": [
-           "Gahyeon",
-           "Dami",
-           "Sua",
-           "Yoohyeon"
-        ]
-      },
-      {
-        "image": "https://pbs.twimg.com/media/ErmZP7pUUAQKQIp?format=jpg&name=large",
-        "title": "Qual o nome da integrante mais velha e líder do grupo?",
-        "description": "",
-        "answer": 2,
-        "alternatives": [
-           "Dami",
-           "Sua",
-           "Jiu",
-           "Siyeon"
-        ]
-      },
-      {
-        "image": "https://pbs.twimg.com/media/ErmZA7sVkAAjXxt?format=jpg&name=large",
-        "title": "Qual é a integrante chinesa do grupo?",
-        "description": "",
-        "answer": 0,
-        "alternatives": [
-           "Handong",
-           "Dami",
-           "Siyeon",
-           "Yoohyeon"
-        ]
-      }
-    ],
-    "external": [
-      "https://aluraquiz-base.alura-challenges.vercel.app/"
-    ],
-    "theme": {
-      "colors": {
-        "primary": "#8A2A2B",
-        "secondary": "#F2C763",
-        "mainBg": "#101820",
-        "contrastText": "#FEFEFE",
-        "wrong": "#D64043",
-        "success": "508A30"
-      },
-      "borderRadius": "4px"
+  "bg": "https://pbs.twimg.com/media/ErwsTVZVkAAlTzk?format=jpg&name=large",
+  "title": "Quiz Dreamcatcher - Imersão React Nextjs Alura",
+  "description": "Teste os seus conhecimentos sobre o grupo",
+  "questions": [
+    {
+      "image": "https://i.ytimg.com/vi/pN0dkjp1deQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD5csbuuVS27-AM3u5TE5dEqqnyzA",
+      "title": "Quantas integrantes tem no grupo?",
+      "description": "",
+      "answer": 1,
+      "alternatives": ["8 integrantes", "7 integrantes", "9 integrantes", "6 integrantes"]
+    },
+    {
+      "image": "https://pbs.twimg.com/media/C0xZQ3vVIAAmNpo?format=jpg&name=large",
+      "title": "Qual a data de estreia do grupo?",
+      "description": "Foi em uma sexta-feira.. ",
+      "answer": 3,
+      "alternatives": [
+        "15 de Janeiro de 2017",
+        "13 de Fevereiro de 2017",
+        "16 de Março de 2017",
+        "13 de Janeiro de 2017"
+      ]
+    },
+    {
+      "image": "https://pbs.twimg.com/media/ErmY1CxVEAElijp?format=jpg&name=large",
+      "title": "Qual o nome da integrante mais nova (maknae) do grupo?",
+      "description": "",
+      "answer": 0,
+      "alternatives": ["Gahyeon", "Dami", "Sua", "Yoohyeon"]
+    },
+    {
+      "image": "https://pbs.twimg.com/media/ErmZP7pUUAQKQIp?format=jpg&name=large",
+      "title": "Qual o nome da integrante mais velha e líder do grupo?",
+      "description": "",
+      "answer": 2,
+      "alternatives": ["Dami", "Sua", "Jiu", "Siyeon"]
+    },
+    {
+      "image": "https://pbs.twimg.com/media/ErmZA7sVkAAjXxt?format=jpg&name=large",
+      "title": "Qual é a integrante chinesa do grupo?",
+      "description": "",
+      "answer": 0,
+      "alternatives": ["Handong", "Dami", "Siyeon", "Yoohyeon"]
     }
+  ],
+  "external": ["https://aluraquiz-base.alura-challenges.vercel.app/"],
+  "theme": {
+    "colors": {
+      "primary": "#8A2A2B",
+      "secondary": "#F2C763",
+      "mainBg": "#101820",
+      "contrastText": "#FEFEFE",
+      "wrong": "#D64043",
+      "success": "508A30"
+    },
+    "borderRadius": "4px"
   }
+}
