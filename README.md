@@ -4,6 +4,8 @@
 
 O projeto AluraQuiz foi desenvolvido durante a Imersão React Next.js da Alura, em Janeiro de 2021, que contou com 5 aulas práticas para criar e colocar no ar uma aplicação React com Next.js.
 
+O AluraQuiz é um jogo no qual o jogador recebe perguntas acompanhadas de várias alternativas, sendo uma delas a resposta correta. Ao término do quiz, o participante descobre quais perguntas acertou e quais errou.
+
 [Acessar o Quiz](https://aluraquiz.alanabacco.vercel.app/)
 
 ## 🛠 Tecnologias
